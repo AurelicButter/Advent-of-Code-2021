@@ -1,37 +1,38 @@
 {
-  "name": "typescript-template",
-  "version": "1.0.0",
-  "description": "Template for TypeScript projects",
-  "main": "./build/index.js",
-  "scripts": {
-    "build": "tsc",
-    "watch": "tsc -w",
-    "eslint": "eslint .",
-    "eslintfix": "eslint . --fix",
-    "prettier": "prettier --write .",
-    "prepare": "husky install",
-    "start": "./build/index.js"
-  },
-  "author": {
-    "name": "Frederick Katsura",
-    "email": "katsurinstudios@protonmail.ch"
-  },
-  "license": "ISC",
-  "lint-staged": {
+	"name": "aoc-2021",
+	"version": "1.0.0",
+	"description": "Collection of AOC 2021 Solutions",
+	"main": "./build/runPuzzle.js",
+	"scripts": {
+		"build": "tsc",
+		"watch": "tsc -w",
+		"launch": "tsc && node build/runPuzzle.js",
+		"eslint": "eslint .",
+		"eslintfix": "eslint . --fix",
+		"prettier": "prettier --write .",
+		"prepare": "husky install",
+		"start": "./build/index.js"
+	},
+	"author": {
+		"name": "Frederick Katsura",
+		"email": "katsurinstudios@protonmail.ch"
+	},
+	"license": "MIT",
+	"lint-staged": {
 		"*.{js,json,jsx,ts,tsx}": [
 			"prettier --write",
 			"eslint --fix --quiet"
 		]
 	},
-  "devDependencies": {
-    "@types/node": "^16.11.6",
-    "@typescript-eslint/eslint-plugin": "^5.2.0",
-    "@typescript-eslint/parser": "^5.2.0",
-    "eslint": "^8.1.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "husky": "^7.0.4",
-    "lint-staged": "^11.2.6",
-    "prettier": "^2.4.1",
-    "typescript": "^4.4.4"
-  }
+	"devDependencies": {
+		"@types/node": "^16.11.11",
+		"@typescript-eslint/eslint-plugin": "^5.5.0",
+		"@typescript-eslint/parser": "^5.5.0",
+		"eslint": "^8.3.0",
+		"eslint-plugin-prettier": "^4.0.0",
+		"husky": "^7.0.4",
+		"lint-staged": "^11.2.6",
+		"prettier": "^2.5.0",
+		"typescript": "^4.5.2"
+	}
 }
